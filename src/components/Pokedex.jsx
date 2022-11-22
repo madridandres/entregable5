@@ -14,7 +14,7 @@ const Pokedex = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get("https://pokeapi.co/api/v2/pokemon") //Para quitar el limite
+        axios.get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=73") //Para quitar el limite
                                                         ///?offset=0&limit=1154
             .then(res => setCharacters(res.data.results));
 
@@ -33,7 +33,13 @@ const Pokedex = () => {
             .then(res => setCharacters(res.data.pokemon))
     }
 
-    console.log(characters)
+    console.log(characters) //Eliminar al terminar
+
+    const [page, setPage] = useState(1);
+    const pokemonPerPage = 5;
+    const lastIndex = page * pokemonPerPage; 
+    const firstIndex = lastIndex - pokemonPerPage;
+    const pokemonPaginated = characters.slice(firstIndex, lastIndex);
 
     return (
         <div>
@@ -60,8 +66,12 @@ const Pokedex = () => {
                     ))}
                 </select>
             </div>
+            <div>
+                <button  onClick={() => setPage(page+1)}>Next Page</button>
+                <button>Prev Page</button>
+            </div>
             <ul>
-                {characters?.map(pokemon => (
+                {pokemonPaginated?.map(pokemon => (
                     <PokemonCard 
                         url={pokemon.url ? pokemon.url : pokemon.pokemon?.url} 
                         key={pokemon.url ? pokemon.url : pokemon.pokemon?.url}
