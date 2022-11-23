@@ -1,6 +1,115 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .selected{
     width: 150px
+}
+
+.img-tittle{
+    width: 676px;
+    height: 121px;
+    margin-top: 200px;
+}
+
+.input-page{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.welcome{
+    height: 40px;
+    font-size: 50px;
+    color: #FE1936;
+}
+
+.text{
+    line-height: 70.51px;
+    font-size: 25px;
+}
+
+.name{
+    width: 100%;
+}
+
+.input-name{
+    width: 35%;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 3px 6px 0px #00000026;
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+.button-name{
+    width: 10%;
+    height: 35px;
+    color: #ffffff;
+    background-color: #D93F3F;
+    border: none;
+    box-shadow: 0px 3px 6px 0px #00000026;
+}
+
+.img_final_page{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.fa-circle-black{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    font-size: 90px;
+}
+
+.fa-circle-white{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 12px;
+    z-index: 4;
+    font-size: 70px;
+    color: white;
+}
+
+.fa-circle-gray{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 28px;
+    z-index: 5;
+    font-size: 40px;
+    color: #121212;
+}
+
+.fa-square-red{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    bottom: 0;
+    background: #DD1A1A;
+    color:#DD1A1A;
+    z-index: 1;
+}
+
+.fa-square-black{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    bottom: 0;
+    background: black;
+    color: black;
+    z-index: 2;
 }
