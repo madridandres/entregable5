@@ -5,7 +5,7 @@ import { changeName } from '../store/slices/name.slice';
 
 const InputName = () => {
 
-    const [ userName, setUserName] = useState("");
+    const [userName, setUserName] = useState("");
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -17,30 +17,30 @@ const InputName = () => {
 
     return (
         <div className='input-page'>
-            <div>
-                <img src="../src/assets/img/pokedex-text.png" alt="Pokedex-img" className='img-tittle'/>
+            <div className='img-tittle-input'>
+                <img src="../src/assets/img/pokedex-text.png" alt="Pokedex-img" />
             </div>
             <h1 className='welcome'>¡Hola entrenador!</h1>
             <p className='text'>Para poder comenzar, dame tu nombre</p>
             <div className='name'>
-                <input 
+                <input
                     className='input-name'
-                    type="text" 
+                    type="text"
                     placeholder='Tu nombre...'
                     onChange={e => setUserName(e.target.value)}
                     value={userName}
                 />
-                <button 
+                <button
                     onClick={enterName}
                     className='button-name'
-                >Enter</button>
-            </div>
-            <div>
-                <i className="fa-solid fa-circle fa-circle-black"></i>
-                <i className="fa-regular fa-circle fa-circle-white"></i>
-                <i className="fa-solid fa-square fa-square-red"></i>
-                <i className="fa-solid fa-square fa-square-black"></i>
-                <i className="fa-solid fa-circle fa-circle-gray"></i>
+                >Comenzar</button>
+                <div>
+                    <i className="fa-solid fa-circle fa-circle-black-input"></i>
+                    <i className="fa-regular fa-circle fa-circle-white-input"></i>
+                    <i className="fa-solid fa-square fa-square-red-input"></i>
+                    <i className="fa-solid fa-square fa-square-black-input"></i>
+                    <i className="fa-solid fa-circle fa-circle-gray-input"></i>
+                </div>
             </div>
         </div>
     );

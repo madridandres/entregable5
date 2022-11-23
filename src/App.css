@@ -5,19 +5,24 @@
     box-sizing: border-box;
 }
 
-.selected{
-    width: 150px
+
+.img-tittle-input{
+    margin-top: 200px;
+    text-align: center;
 }
 
-.img-tittle{
-    width: 676px;
-    height: 121px;
-    margin-top: 200px;
+.img-other-page{
+    top: 0;
+    left: 10px;
+}
+
+.img-other-page > img{
+    height: 108px;
+    margin-left: 110px;
 }
 
 .input-page{
     width: 100%;
-    height: 100vh;
     font-family: 'Inter', sans-serif;
     text-align: center;
 }
@@ -55,24 +60,19 @@
     box-shadow: 0px 3px 6px 0px #00000026;
 }
 
-.img_final_page{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-}
 
-.fa-circle-black{
+
+.fa-circle-black-input{
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;
     z-index: 3;
     font-size: 90px;
+    text-align: center;
 }
 
-.fa-circle-white{
+.fa-circle-white-input{
     position: absolute;
     width: 100%;
     left: 0;
@@ -80,9 +80,10 @@
     z-index: 4;
     font-size: 70px;
     color: white;
+    text-align: center;
 }
 
-.fa-circle-gray{
+.fa-circle-gray-input{
     position: absolute;
     width: 100%;
     left: 0;
@@ -90,9 +91,10 @@
     z-index: 5;
     font-size: 40px;
     color: #121212;
+    text-align: center;
 }
 
-.fa-square-red{
+.fa-square-red-input{
     position: absolute;
     width: 100%;
     height: 120px;
@@ -101,9 +103,10 @@
     background: #DD1A1A;
     color:#DD1A1A;
     z-index: 1;
+    text-align: center;
 }
 
-.fa-square-black{
+.fa-square-black-input{
     position: absolute;
     width: 100%;
     height: 60px;
@@ -112,4 +115,100 @@
     background: black;
     color: black;
     z-index: 2;
+    text-align: center;
+}
+
+.fa-circle-black-otherpage{
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    z-index: -3;
+    font-size: 90px;
+    text-align: center;
+}
+
+.fa-circle-white-otherpage{
+    position: absolute;
+    right: 90px;
+    top: 90px;
+    z-index: -2;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+.fa-circle-gray-otherpage{
+    position: absolute;
+    right: 105px;
+    top: 105px;
+    z-index: -1;
+    font-size: 40px;
+    color: #121212;
+    text-align: center;
+}
+
+.fa-square-red-otherpage{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0px;
+    top: 0;
+    background: #DD1A1A;
+    color:#DD1A1A;
+    z-index: -5;
+    text-align: center;
+}
+
+.fa-square-black-otherpage{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 100px;
+    background: black;
+    color: black;
+    z-index: -4;
+    text-align: center;
+}
+
+.paragraph{
+    margin-top: 70px;
+    margin-left: 120px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.paragraph > b{
+    color: red;
+}
+
+.input-name-pokedex{
+    margin-left: 120px;
+    margin-top: 10px;
+    width: 20%;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 3px 6px 0px #00000026;
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+.selected{
+    margin-left: 20px;
+    width: 350px;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 3px 6px 0px #00000026;
+}
+
+.Card{
+    background: linear-gradient(179.27deg, #B1DBBC -20.76%, #C3DEA3 157.95%);
+}
+
+.Card-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 35px 25px 35px 25px;
+    gap: 1rem;
 }

@@ -12,10 +12,18 @@ const PokedexDetail = () => {
             .then(res => setPokemon(res.data))
     }, [id])
 
-    console.log(pokemon)
-
     return (
         <div>
+            <div className='img-other-page'>
+                <img src="../src/assets/img/pokedex-other-page.png" alt="Pokedex-img" />
+            </div>
+            <div>
+                <i className="fa-solid fa-circle fa-circle-black-otherpage"></i>
+                <i className="fa-regular fa-circle fa-circle-white-otherpage"></i>
+                <i className="fa-solid fa-square fa-square-red-otherpage"></i>
+                <i className="fa-solid fa-square fa-square-black-otherpage"></i>
+                <i className="fa-solid fa-circle fa-circle-gray-otherpage"></i>
+            </div>
             <h1>{pokemon.name}</h1>
             <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
         </div>

@@ -26,7 +26,7 @@ const Pokedex = () => {
     const searchPokemon = () => {
         navigate(`/pokedex/${pokemonName.toLowerCase()}`)
     }
-
+    
     const filterType = (e) => {
         const url = e.target.value;
         axios.get(url)
@@ -51,17 +51,30 @@ const Pokedex = () => {
 
     return (
         <div>
-            <h1>Pokedex</h1>
-            <p>Welcome {userName}!</p>
+            <div className='img-other-page'>
+                <img src="../src/assets/img/pokedex-other-page.png" alt="Pokedex-img" />
+            </div>
             <div>
+                <i className="fa-solid fa-circle fa-circle-black-otherpage"></i>
+                <i className="fa-regular fa-circle fa-circle-white-otherpage"></i>
+                <i className="fa-solid fa-square fa-square-red-otherpage"></i>
+                <i className="fa-solid fa-square fa-square-black-otherpage"></i>
+                <i className="fa-solid fa-circle fa-circle-gray-otherpage"></i>
+            </div>
+            <p className='paragraph'><b>Bienvenido {userName},</b> aquí podrás encontrar tu pokemón favorito</p>
+            <div className='name'>
                 <input
+                    className='input-name-pokedex'
                     type="text"
-                    placeholder='Search pokemon'
+                    placeholder='Busca un pokemón'
                     value={pokemonName}
                     onChange={e => setPokemonName(e.target.value)}
                 />
-                <button onClick={searchPokemon}>
-                    Search
+                <button
+                    onClick={searchPokemon}
+                    className="button-name"
+                >
+                    Buscar
                 </button>
                 <select className="selected" onChange={filterType} name="" id="">
                     {types?.map(type => (
@@ -69,19 +82,23 @@ const Pokedex = () => {
                             value={type.url}
                             key={type.name}
                         >
-                            {type.name}
+                            {type.name?.toUpperCase()}
                         </option>
                     ))}
                 </select>
             </div>
-            <ul>
-                {pokemonPaginated?.map(pokemon => (
-                    <PokemonCard
-                        url={pokemon.url ? pokemon.url : pokemon.pokemon?.url}
-                        key={pokemon.url ? pokemon.url : pokemon.pokemon?.url}
-                    />
-                ))}
-            </ul>
+            <div>
+                <ul >
+                    <li className="Card-section">
+                        {pokemonPaginated?.map(pokemon => (
+                            <PokemonCard
+                                url={pokemon.url ? pokemon.url : pokemon.pokemon?.url}
+                                key={pokemon.url ? pokemon.url : pokemon.pokemon?.url}
+                            />
+                        ))}
+                    </li>
+                </ul>
+            </div>
             <div>
                 <button
                     onClick={() => setPage(page - 1)}
@@ -99,6 +116,7 @@ const Pokedex = () => {
                     Next Page
                 </button>
             </div>
+
         </div>
     );
 };
