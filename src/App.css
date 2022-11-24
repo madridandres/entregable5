@@ -7,7 +7,7 @@
 
 
 .img-tittle-input{
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -202,13 +202,245 @@
 }
 
 .Card{
-    background: linear-gradient(179.27deg, #B1DBBC -20.76%, #C3DEA3 157.95%);
+    width: 200px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: black;
 }
+
+.style-card{
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+
+.fighting{
+    background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+}
+
+.Card-fighting{
+    border: 6px solid #96402A;
+}
+
+.flying{
+    background: linear-gradient(176.37deg, #a7a3f0 -32.26%, #2535e3 22.55%, #1b63e8 125.72%);
+}
+
+.Card-flying{
+    border: 6px solid #a7a3f0;
+}
+
+.poison{
+    background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+}
+
+.Card-poison{
+    border: 6px solid #5B3184;
+}
+
+.ground{
+    background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+}
+
+.Card-ground{
+    border: 6px solid #654008;
+}
+
+.rock{
+    background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+}
+
+.Card-rock{
+    border: 6px solid #7E7E7E;
+}
+
+.bug{
+    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+}
+
+.Card-bug{
+    border: 6px solid #62DB60;
+}
+
+.ghost{
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+}
+
+.Card-ghost{
+    border: 6px solid #323569;
+}
+
+.steel{
+    background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+}
+
+.Card-steel{
+    border: 6px solid #5E736C;
+}
+
+.fire{
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.Card-fire{
+    border: 6px solid #E35825;
+}
+
+.water{
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+
+.Card-water{
+    border: 6px solid #133258;
+}
+
+.grass{
+    background: linear-gradient(177.56deg, #4fb75c -58.92%, #227020 16.57%, #6fae6e 209.53%);
+}
+
+.Card-grass{
+    border: 6px solid #4fb75c;
+}
+
+.electric{
+    background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+}
+
+.Card-electric{
+    border: 6px solid #0C1395;
+}
+
+.psychic{
+    background: linear-gradient(176.37deg, #f39b9d -32.26%, #ff9b76 22.55%, #ffdc84 125.72%);
+}
+
+.Card-psychic{
+    border: 6px solid #f39b9d;
+}
+
+.ice{
+    background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+}
+
+.Card-ice{
+    border: 6px solid #6FBEDF;
+}
+
+.dragon{
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+}
+
+.Card-dragon{
+    border: 6px solid #478A93;
+}
+
+.dark{
+    background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+}
+
+.Card-dark{
+    border: 6px solid #030706;
+}
+
+.fairy{
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+
+.Card-fairy{
+    border: 6px solid #971B45;
+}
+
+.unknown{
+    background: linear-gradient(179.75deg, #848182 -19.96%, #a7a3a4 43.67%, #aaaaaa 138.4%);
+}
+
+.Card-unknown{
+    border: 6px solid #848182;
+}
+
+.shadow{
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+}
+
+.Card-shadow{
+    border: 6px solid #323569;
+}
+
+.normal{
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+
+.Card-normal{
+    border: 6px solid #7EC6C5;
+}
+
+.Card > img{
+    height: 100px;
+    position: relative;
+    top: -55px;
+} 
 
 .Card-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    margin: 35px 25px 35px 25px;
-    gap: 1rem;
+    margin: 35px 70px 35px 70px;
+    gap: 10px;
+    text-align: center;
 }
+
+.info-card{
+    margin-top: -55px;
+}
+
+.stats{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    text-transform: uppercase;
+}
+
+.stats > div > h4{
+    color: rgb(0, 0, 0);
+}
+
+.color{
+    color: rgb(85, 19, 19);
+}
+
+.color > div > h6{
+    color: black;
+}
+
+.pagination{
+    max-width: 400px;
+    text-align: center;
+    margin: 0 50% 20px 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination > .numbers{
+    width: 60px;
+    height: 40px;
+    border: none;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: revert;
+}
+
+.fa-solid-pagination{
+    background: red;
+    border: none;
+    width: 40px;
+    font-size: 20px;
+}
+
+.numbers:hover{
+    background: rgb(220, 133, 133);
+}
+
+
+

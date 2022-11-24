@@ -14,7 +14,7 @@ const Pokedex = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=73") //Para quitar el limite
+        axios.get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=250") //Para quitar el limite
             ///?offset=0&limit=1154
             .then(res => setCharacters(res.data.results));
 
@@ -99,21 +99,23 @@ const Pokedex = () => {
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className='pagination'>
                 <button
+                    className='fa-solid-pagination'
                     onClick={() => setPage(page - 1)}
                     disabled={page === 1}
                 >
-                    Prev Page
+                    <i class="fa-solid fa-angles-left"></i>
                 </button>
                 {numbers.map(number => (
-                    <button onClick={() => setPage(number)}>{number}</button>
+                    <button className='numbers' onClick={() => setPage(number)}>{number}</button>
                 ))}
                 <button
+                    className='fa-solid-pagination'
                     onClick={() => setPage(page + 1)}
                     disabled={page === totalPages}
                 >
-                    Next Page
+                    <i class="fa-solid fa-angles-right"></i>
                 </button>
             </div>
 

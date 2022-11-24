@@ -18,7 +18,7 @@ const InputName = () => {
     return (
         <div className='input-page'>
             <div className='img-tittle-input'>
-                <img src="../src/assets/img/pokedex-text.png" alt="Pokedex-img" />
+                <img src="../src/assets/img/pokedex-other-page.png" alt="Pokedex-img" />
             </div>
             <h1 className='welcome'>¡Hola entrenador!</h1>
             <p className='text'>Para poder comenzar, dame tu nombre</p>
