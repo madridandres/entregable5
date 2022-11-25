@@ -11,8 +11,6 @@ const PokemonCard = ({ url }) => {
             .then(res => setCharacter(res.data))
     }, [])
 
-    console.log(character)
-
     return (
 
         <Link to={`/pokedex/${character.id}`} className={`${character.types?.[0]?.type?.name === "rock" ? "Card-rock"

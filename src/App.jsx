@@ -8,10 +8,10 @@ import ProtectedRoutes from './components/ProtectedRoutes'
 function App() {
 
   return (
+    
     <HashRouter>
       <Routes>
         <Route path='/' element={<InputName />} />
-
         <Route element={<ProtectedRoutes />}>
           <Route path='/pokedex' element={<Pokedex />} />
           <Route path="/pokedex/:id" element={<PokedexDetail />} />
