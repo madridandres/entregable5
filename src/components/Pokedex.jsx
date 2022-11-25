@@ -47,7 +47,7 @@ const Pokedex = () => {
     return (
         <div>
             <div className='img-other-page'>
-                <img src="../src/assets/img/pokedex-other-page.png" alt="Pokedex-img" />
+                <img src="../src/assets/pokedex-other-page.png" alt="Pokedex-img" />
             </div>
             <div>
                 <i className="fa-solid fa-circle fa-circle-black-otherpage"></i>
