@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { changeName } from '../store/slices/name.slice';
+import pokedex_other_page from '../src/assets/img/pokedex-other-page.png'
 
 const InputName = () => {
 
@@ -18,7 +19,7 @@ const InputName = () => {
     return (
         <div className='input-page'>
             <div className='img-tittle-input'>
-                <img src="../src/assets/pokedex-other-page.png" alt="Pokedex-img" />
+                <img src={pokedex_other_page} alt="Pokedex-img" />
             </div>
             <h1 className='welcome'>¡Hola entrenador!</h1>
             <p className='text'>Para poder comenzar, dame tu nombre</p>

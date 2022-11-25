@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import pokedex_other_page from '../src/assets/img/pokedex-other-page.png'
 
 const PokedexDetail = () => {
 
@@ -15,7 +16,7 @@ const PokedexDetail = () => {
     return (
         <div>
             <div className='img-other-page'>
-                <img src="../src/assets/pokedex-other-page.png" alt="Pokedex-img" />
+                <img src={pokedex_other_page} alt="Pokedex-img" />
             </div>
             <div>
                 <i className="fa-solid fa-circle fa-circle-black-otherpage"></i>

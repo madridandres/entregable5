@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import PokemonCard from './PokemonCard';
+import pokedex_other_page from '../src/assets/img/pokedex-other-page.png'
 
 const Pokedex = () => {
 
@@ -47,7 +48,7 @@ const Pokedex = () => {
     return (
         <div>
             <div className='img-other-page'>
-                <img src="../src/assets/pokedex-other-page.png" alt="Pokedex-img" />
+                <img src={pokedex_other_page} alt="Pokedex-img" />
             </div>
             <div>
                 <i className="fa-solid fa-circle fa-circle-black-otherpage"></i>
