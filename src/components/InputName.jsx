@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { changeName } from '../store/slices/name.slice';
-import pokedex_other_page from '../src/assets/img/pokedex-other-page.png'
+import pokedex_other_page from '../assets/img/pokedex_other_page.png'
 
 const InputName = () => {
 

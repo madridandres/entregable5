@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import pokedex_other_page from '../src/assets/img/pokedex-other-page.png'
+import pokedex_other_page from '../assets/img/pokedex_other_page.png'
 
 const PokedexDetail = () => {
 
